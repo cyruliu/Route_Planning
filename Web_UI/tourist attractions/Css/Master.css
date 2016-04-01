@@ -1,0 +1,55 @@
+﻿body 
+{
+}
+#page
+{
+    width:1200px;
+   margin-left:auto;
+   margin-right:auto;
+  
+    }
+#panel1
+{
+ width:200px;
+ height:790px; 
+ background-color:#CCF; 
+ border:1px solid #9CF; font-size:12px; 
+ top:255px; float:left;
+   
+}
+    #panel2
+{
+  width:200px;height:790px; background-color:#CCF; 
+  border:1px solid #9CF; font-size:12px; 
+  top :255px;  
+  float:right;
+  
+}
+    #panel3
+{
+  width:790px;
+  height :790px; 
+  background-color:#CCC; 
+  border:1px solid #9CF; font-size:12px; 
+  top :372px;  
+  margin-left : auto;
+  margin-right:auto;
+  margin-top:auto;
+   
+   
+   
+}
+  #panel4
+{
+  width:1198px;
+  height :117px; 
+  background-color:#FFF; 
+  border:1px solid #9CF; font-size:12px; 
+  top:255px; 
+  float :left;
+  margin-top:auto;
+
+ 
+}
+
+
