@@ -1,0 +1,47 @@
+﻿body {
+}
+.clear
+{
+    clear:both;
+    }
+#mainbox
+{
+    width:1024px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:ButtonFace;
+    
+    }
+
+#nav
+{
+    list-style-type:none;
+   
+    }
+    
+#nav LI
+{
+    float:left;
+    width:180px;
+    font-size:x-large
+    
+    }
+#contentph1
+{
+    width:200px;
+    height:550px;
+    float:left;
+    background-color:Silver;
+    }
+#contentph2
+{
+    width:800px;
+    height:550px;
+    float:right;
+    }    
+#wzsy
+{
+    background-color:Highlight;
+    font-size:large;
+    }
+

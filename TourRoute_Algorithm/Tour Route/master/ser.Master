@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ser.Master.cs" Inherits="Tour_Route.master.s" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../css/ser.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="mainbox">
+      <div id="header">
+          <img src="../images/other/Top1.jpg" />
+          <%--登录模块--%>
+          <div id="login">
+          <table><tr>
+          <td>浏览器:</td>
+           <td><asp:Label ID="lblWeb" runat="server" Text="浏览器"></asp:Label></td>
+            <td><asp:Label ID="Label4" runat="server" Text=" | |"></asp:Label></td>
+           <td><asp:Label ID="Label2" runat="server" Text="操作系统:"></asp:Label> </td>
+           <td><asp:Label ID="lblHost" runat="server" Text="操作系统"></asp:Label></td>
+          <td><asp:Label ID="Label5" runat="server" Text=" | |"></asp:Label></td>
+           <td><asp:Label ID="Label3" runat="server" Text="IP:"></asp:Label></td>
+           <td><asp:Label ID="lblIP" runat="server" Text="IP"></asp:Label></td>
+           <td><a id="wzsy" href="../Default.aspx">网站首页</a></td>
+          </tr></table>
+          </div>
+
+           <ul id="nav">
+         <li><a href="../admin/userManager.aspx">用户管理</a></li>
+         <li><a href="../admin/sceneManager.aspx">景点管理</a></li>
+         <li><a href="../admin/routeAndevaluateManager.aspx">路线及评价管理</a></li>
+         <li><a href="../admin/lianjieManager.aspx">友情链接管理</a></li>
+         <li><a href="../admin/otherManager.aspx">其他</a></li>
+         </ul>
+      </div>
+      <div id="contentph1">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="contentph2">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+         <br class="clear"/>
+        <div id="footer">
+        <center>版权所有</center>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

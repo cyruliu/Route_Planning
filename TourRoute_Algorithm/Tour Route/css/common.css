@@ -1,0 +1,16 @@
+﻿body {
+}
+#main
+{
+    width:600px;
+    height:300px;
+    background-color:ButtonShadow;
+    margin-left:auto;
+    margin-right:auto;
+    
+    margin-top:10px;
+    }
+ #tit
+ {
+     margin-top:150px;
+     }   

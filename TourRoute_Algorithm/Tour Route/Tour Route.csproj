@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7950F747-88EF-4C9A-9384-6A27556C417E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tour_Route</RootNamespace>
+    <AssemblyName>Tour Route</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\cityManager.aspx" />
+    <Content Include="admin\evaluateManager.aspx" />
+    <Content Include="admin\lianjieManager.aspx" />
+    <Content Include="admin\login.aspx" />
+    <Content Include="admin\otherManager.aspx" />
+    <Content Include="admin\provinceManager.aspx" />
+    <Content Include="admin\register.aspx" />
+    <Content Include="admin\routeAndevaluateManager.aspx" />
+    <Content Include="admin\sceneManager.aspx" />
+    <Content Include="admin\userInfoManager.aspx" />
+    <Content Include="admin\userManager.aspx" />
+    <Content Include="App_Data\db_selectScene.mdf" />
+    <Content Include="App_Data\db_selectScene_log.ldf">
+      <DependentUpon>db_selectScene.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\admin.css" />
+    <Content Include="css\client.css" />
+    <Content Include="css\common.css" />
+    <Content Include="css\ser.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="formRoute.aspx" />
+    <Content Include="images\404.jpg" />
+    <Content Include="images\other\Top1.jpg" />
+    <Content Include="images\province\aomen\aomen.jpg" />
+    <Content Include="images\province\beijing\beijing.jpg" />
+    <Content Include="images\province\beijing\bjdwy.jpg" />
+    <Content Include="images\province\beijing\gg.jpg" />
+    <Content Include="images\province\beijing\nc.jpg" />
+    <Content Include="images\province\beijing\tam.jpg" />
+    <Content Include="images\province\beijing\wfj.jpg" />
+    <Content Include="images\province\chongqing\chongqing.jpg" />
+    <Content Include="images\province\hebei\hcz.jpg" />
+    <Content Include="images\province\shanghai\hhl.jpg" />
+    <Content Include="images\province\shanghai\jas.jpg" />
+    <Content Include="images\province\shanghai\ljz.jpg" />
+    <Content Include="images\province\shanghai\rmgc.jpg" />
+    <Content Include="images\province\shanghai\shanghai.jpg" />
+    <Content Include="images\province\shanghai\wt.jpg" />
+    <Content Include="images\province\tianjin\tianjin.jpg" />
+    <Content Include="images\province\xianggang\bj.jpg" />
+    <Content Include="images\province\xianggang\jsj.jpg" />
+    <Content Include="images\province\xianggang\tlw.jpg" />
+    <Content Include="images\province\xianggang\wj.jpg" />
+    <Content Include="images\province\xianggang\xianggang.jpg" />
+    <Content Include="images\province\xianggang\zh.jpg" />
+    <Content Include="SceneInfo.aspx" />
+    <Content Include="scripts\loadMap.js" />
+    <Content Include="scripts\searchlocal.js" />
+    <Content Include="UserInfo.aspx" />
+    <Content Include="evaluate.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addCityScene.ashx.cs">
+      <DependentUpon>addCityScene.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\cityManager.aspx.cs">
+      <DependentUpon>cityManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\cityManager.aspx.designer.cs">
+      <DependentUpon>cityManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\evaluateManager.aspx.cs">
+      <DependentUpon>evaluateManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\evaluateManager.aspx.designer.cs">
+      <DependentUpon>evaluateManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\lianjieManager.aspx.cs">
+      <DependentUpon>lianjieManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\lianjieManager.aspx.designer.cs">
+      <DependentUpon>lianjieManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\otherManager.aspx.cs">
+      <DependentUpon>otherManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\otherManager.aspx.designer.cs">
+      <DependentUpon>otherManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\provinceManager.aspx.cs">
+      <DependentUpon>provinceManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\provinceManager.aspx.designer.cs">
+      <DependentUpon>provinceManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\routeAndevaluateManager.aspx.cs">
+      <DependentUpon>routeAndevaluateManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\routeAndevaluateManager.aspx.designer.cs">
+      <DependentUpon>routeAndevaluateManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\sceneManager.aspx.cs">
+      <DependentUpon>sceneManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\sceneManager.aspx.designer.cs">
+      <DependentUpon>sceneManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\userInfoManager.aspx.cs">
+      <DependentUpon>userInfoManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\userInfoManager.aspx.designer.cs">
+      <DependentUpon>userInfoManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\userManager.aspx.cs">
+      <DependentUpon>userManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\userManager.aspx.designer.cs">
+      <DependentUpon>userManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\B_city.cs" />
+    <Compile Include="BLL\B_province.cs" />
+    <Compile Include="BLL\B_scene.cs" />
+    <Compile Include="BLL\B_common.cs" />
+    <Compile Include="BLL\B_user.cs" />
+    <Compile Include="DAL\DBHelper.cs" />
+    <Compile Include="DAL\D_city.cs" />
+    <Compile Include="DAL\D_DataSet\DataSetCity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\D_DataSet\DataSetEvaluate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEvaluate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\D_DataSet\DataSetProvince.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProvince.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\D_DataSet\DataSetRoute.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetRoute.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\D_DataSet\DataSetScene.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetScene.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\D_DataSet\DataSetUser.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetUser.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\D_DataSet\DataSetUserInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetUserInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\D_province.cs" />
+    <Compile Include="DAL\D_scene.cs" />
+    <Compile Include="DAL\D_User.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formRoute.aspx.cs">
+      <DependentUpon>formRoute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formRoute.aspx.designer.cs">
+      <DependentUpon>formRoute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="master\client.Master.cs">
+      <DependentUpon>client.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\client.Master.designer.cs">
+      <DependentUpon>client.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\ser.Master.cs">
+      <DependentUpon>ser.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\ser.Master.designer.cs">
+      <DependentUpon>ser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Model\M_city.cs" />
+    <Compile Include="Model\M_province.cs" />
+    <Compile Include="Model\M_scene.cs" />
+    <Compile Include="Model\M_user.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SceneInfo.aspx.cs">
+      <DependentUpon>SceneInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SceneInfo.aspx.designer.cs">
+      <DependentUpon>SceneInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.aspx.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInfo.aspx.designer.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="evaluate.aspx.cs">
+      <DependentUpon>evaluate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="evaluate.aspx.designer.cs">
+      <DependentUpon>evaluate.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master\client.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master\ser.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addCityScene.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DAL\D_DataSet\DataSetCity.xsc">
+      <DependentUpon>DataSetCity.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetCity.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCity.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetCity.xss">
+      <DependentUpon>DataSetCity.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetEvaluate.xsc">
+      <DependentUpon>DataSetEvaluate.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetEvaluate.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEvaluate.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetEvaluate.xss">
+      <DependentUpon>DataSetEvaluate.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetProvince.xsc">
+      <DependentUpon>DataSetProvince.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetProvince.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProvince.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetProvince.xss">
+      <DependentUpon>DataSetProvince.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetRoute.xsc">
+      <DependentUpon>DataSetRoute.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetRoute.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetRoute.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetRoute.xss">
+      <DependentUpon>DataSetRoute.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetScene.xsc">
+      <DependentUpon>DataSetScene.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetScene.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetScene.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetScene.xss">
+      <DependentUpon>DataSetScene.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetUser.xsc">
+      <DependentUpon>DataSetUser.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetUser.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetUser.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetUser.xss">
+      <DependentUpon>DataSetUser.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetUserInfo.xsc">
+      <DependentUpon>DataSetUserInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetUserInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetUserInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAL\D_DataSet\DataSetUserInfo.xss">
+      <DependentUpon>DataSetUserInfo.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\province\anhui\" />
+    <Folder Include="images\province\fujian\" />
+    <Folder Include="images\province\gansu\" />
+    <Folder Include="images\province\guangdong\" />
+    <Folder Include="images\province\guangxi\" />
+    <Folder Include="images\province\guizhou\" />
+    <Folder Include="images\province\hainan\" />
+    <Folder Include="images\province\heilongjiang\" />
+    <Folder Include="images\province\henan\" />
+    <Folder Include="images\province\hubei\" />
+    <Folder Include="images\province\hunan\" />
+    <Folder Include="images\province\jiangsu\" />
+    <Folder Include="images\province\jiangxi\" />
+    <Folder Include="images\province\jilin\" />
+    <Folder Include="images\province\liaoning\" />
+    <Folder Include="images\province\neimenggu\" />
+    <Folder Include="images\province\ningxia\" />
+    <Folder Include="images\province\qinghai\" />
+    <Folder Include="images\province\shandong\" />
+    <Folder Include="images\province\shanxi2\" />
+    <Folder Include="images\province\shanxi\" />
+    <Folder Include="images\province\sichuan\" />
+    <Folder Include="images\province\taiwan\" />
+    <Folder Include="images\province\xinjiang\" />
+    <Folder Include="images\province\xizang\" />
+    <Folder Include="images\province\yunnan\" />
+    <Folder Include="images\province\zhejiang\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4919</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="client.Master.cs" Inherits="Tour_Route.master.c" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../css/client.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div id="mainbox">
+      <div id="header">
+          <img src="../images/other/Top1.jpg" />
+             <%--登录模块--%>
+          <div id="login">
+          <table><tr>
+          <td><asp:Label ID="Label1" runat="server" Text="浏览器:"></asp:Label></td>
+           <td><asp:Label ID="lblWeb" runat="server" Text="浏览器"></asp:Label></td>
+            <td><asp:Label ID="Label4" runat="server" Text=" | |"></asp:Label></td>
+           <td><asp:Label ID="Label2" runat="server" Text="操作系统:"></asp:Label> </td>
+           <td><asp:Label ID="lblHost" runat="server" Text="操作系统"></asp:Label></td>
+          <td><asp:Label ID="Label5" runat="server" Text=" | |"></asp:Label></td>
+           <td><asp:Label ID="Label3" runat="server" Text="IP:"></asp:Label></td>
+           <td><asp:Label ID="lblIP" runat="server" Text="IP"></asp:Label></td>
+           <td><asp:Label ID="lblUserName" runat="server" Text="用户名:"></asp:Label></td>
+            <td><asp:TextBox ID="txtUserName" runat="server"></asp:TextBox></td>
+             <td><asp:Label ID="lblUserPwd" runat="server" Text="密码:"></asp:Label></td>
+            <td><asp:TextBox ID="txtUserPwd" runat="server"></asp:TextBox></td>
+            <td><asp:Button ID="btnLogin" runat="server" Text="登录" onclick="Login_Click" /></td>
+             <td><asp:Button ID="btnRegister" runat="server" Text="注册" 
+                     onclick="btnRegister_Click" /></td>
+             <td><asp:Label ID="lblErrorMsg" runat="server" Text="欢迎登录"></asp:Label></td> 
+          </tr></table>
+          </div>
+           <ul id="nav">
+         <li><a href="../Default.aspx">景点推荐</a></li>
+         <li><a href="../SceneInfo.aspx">景点搜索</a></li>
+         <li><a href="../UserInfo.aspx">景点信息</a></li>
+         <li><a href="../formRoute.aspx">路线生成</a></li>
+         <li><a href="../evaluate.aspx">用户评论</a></li>
+         </ul>
+      </div>
+      <div id="contentph1">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="contentph3">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="contentph2">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+        </div>
+         <br class="clear"/>
+        <div id="footer">
+        <center>版权所有</center>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
